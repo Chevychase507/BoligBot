@@ -1,0 +1,9 @@
+[Unit]
+Description=Benckebot scraper
+
+[Service]
+Type=simple
+User=ahoj
+Group=ahoj
+WorkingDirectory=/home/ahoj/benckescraper/
+ExecStart=/usr/local/bin/scrapy crawl bencke

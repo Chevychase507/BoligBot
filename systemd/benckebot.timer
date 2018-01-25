@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs benckebot once every 5 minutes
+Requires=benckebot.service
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2min
+Unit=benckebot.service
+
+[Install]
+WantedBy=multi-user.target
